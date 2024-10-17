@@ -10,88 +10,69 @@
 
 ## System Description
 
-The **"Bank Credit Department System"** is designed for optimizing the processing and analysis of credit-related processes within the bank. The main features of the system include:
+The **Bank Credit Department System** is designed to optimize the processes of handling and analyzing bank lending operations. The system automates various tasks, ensuring efficient management of loan applications, document processing, communication with clients, and more.
 
-- **Credit Application Processing**: Creation, submission, and processing of credit applications.
-- **Scoring and Creditworthiness Assessment**: Automated analysis of the creditworthiness of the applicant.
-- **Document Management**: Creation, modification, storage, and transmission of documents.
-- **Customer Communication**: Communication with customers through all available channels (chat, SMS, messengers, social networks, etc.).
-- **Reporting and Analytics**: Creation of reports for evaluating the credit portfolio and monitoring its status.
-- **Integration with External Systems**: Interaction with other credit organizations, government agencies, etc.
+## Key Features
 
-## Key Actors
+- **Loan Application Processing**: Create, submit, and manage loan applications efficiently.
+- **Scoring and Creditworthiness Assessment**: Automated analysis of the applicant's creditworthiness.
+- **Document Management**: Tools for creating, editing, storing, and sending documents.
+- **Client Communication**: Contact clients via various communication channels (chat, SMS, messengers, social networks).
+- **Reporting and Analytics**: Generate reports for evaluating the credit portfolio and monitoring its status.
+- **Integration with External Systems**: Seamless interaction with other credit organizations, government agencies, and more.
 
-- **Customers**: Individuals and legal entities submitting credit applications.
-- **Credit Specialists**: Employees responsible for processing and analyzing credit applications.
-- **Customer Relationship Managers**: Employees who communicate with customers, guiding them from start to finish.
-- **Analysts**: Specialists providing information about the productivity of the department and responsible for reporting.
-- **System Administrators**: Technical specialists maintaining system functionality and improving its fault tolerance.
-- **Department Managers**: Managers responsible for risk management and making strategic decisions.
-- **Lawyers**: Specialists dealing with legal aspects of all agreements and documents.
-- **Financial Analysts**: Employees analyzing and forecasting the economic situation and preparing reports.
-- **Security Specialists**: Specialists responsible for system security, data preservation, fraud prevention, and cyber attacks.
+## Main Actors
 
-## Actions, Access, and Capabilities for Key Actors
+- **Clients**: Individuals or legal entities applying for loans.
+- **Credit Specialists**: Employees responsible for processing and analyzing loan applications.
+- **Client Managers**: Employees who assist clients throughout the loan process.
+- **System Administrators**: Technical experts ensuring system stability and fault tolerance.
+- **Lawyers**: Handle legal aspects of agreements and documentation.
+- **Security Specialists**: Protect the system from fraud, cyber-attacks, and ensure data security.
+- **Analytics Department**: External service for financial analysis and providing reports on department productivity.
 
-### Customers
+## Actions and Permissions for Each Role
 
-- **Actions**: Creating, modifying, and submitting applications, providing documents.
-- **Access**: User's personal account.
-- **Capabilities**: Monitoring application status, communicating with specialists through communication channels (chat or email).
+### Clients
+- **Actions**: Create, modify, submit applications; provide documents.
+- **Access**: Personal user account.
+- **Capabilities**: Monitor application status, communicate with specialists.
 
 ### Credit Specialists
-
-- **Actions**: Processing applications, making credit decisions.
+- **Actions**: Process applications, decide on loan provision.
 - **Access**: Application management system, client documents, scoring system.
-- **Capabilities**: Viewing, editing applications, generating reports and providing them to management.
+- **Capabilities**: View and modify applications, generate reports.
 
-### Customer Relationship Managers
-
-- **Actions**: Communicating with customers, consulting on credit products.
+### Client Managers
+- **Actions**: Communicate with clients, provide product consultations.
 - **Access**: Client documents, chat, corporate email.
-- **Capabilities**: Creating applications, editing applications, requesting and providing documents.
-
-### Analysts
-
-- **Actions**: Data analysis, portfolio monitoring, report preparation.
-- **Access**: General data on the work of the credit department, analysis tools.
-- **Capabilities**: Creating, editing, and providing reports.
+- **Capabilities**: Create and edit applications, request and provide documents.
 
 ### System Administrators
-
-- **Actions**: System maintenance, corporate computer setup, server setup and maintenance, problem resolution, error control.
-- **Access**: Full access to the system and its settings.
-- **Capabilities**: System configuration, user access management, data security.
-
-### Department Managers
-
-- **Actions**: Monitoring employee performance, making strategic decisions.
-- **Access**: Reports, tasks, chat, email.
-- **Capabilities**: Viewing reports, managing personnel through communication channels (chat, email).
+- **Actions**: System maintenance, server setup, troubleshooting, and error monitoring.
+- **Access**: Full access to system configuration.
+- **Capabilities**: User rights management, ensure data security.
 
 ### Lawyers
-
-- **Actions**: Creating, checking, and preparing legal documents, consulting on legal issues.
+- **Actions**: Create, verify, and prepare legal documents, provide legal consultations.
 - **Access**: Document database.
-- **Capabilities**: Viewing, creating, and editing documents.
-
-### Financial Analysts
-
-- **Actions**: Analyzing and forecasting the economic situation, preparing reports.
-- **Access**: Access to data related to the financial component of the department.
-- **Capabilities**: Creating, editing, and providing reports.
+- **Capabilities**: View, create, and edit documents.
 
 ### Security Specialists
+- **Actions**: Monitor and protect the system from attacks and fraud.
+- **Access**: Full access to security systems and data.
+- **Capabilities**: Prevent attacks, manage user access rights, monitor data security.
 
-- **Actions**: Ensuring protection against all types of attacks, fraud, system monitoring.
-- **Access**: Full access to the security system and data.
-- **Capabilities**: Preventing attacks, changing user access rights, data control.
+### Analytics Department
+- **Actions**: Analyze and forecast economic conditions, monitor portfolio and employee performance, make strategic decisions.
+- **Access**: Financial data, department performance data, analytical tools.
+- **Capabilities**: Create, edit, and provide reports.
 
-## Application Value Description
+## Application Benefits
 
-- **Accelerate application processing**: Automation of the system helps specialists analyze the application faster and make a decision.
-- **Improve creditworthiness assessment accuracy**: Increasing the security of the bank's credit department from dishonest individuals, whose actions lead to financial losses.
-- **Enhance customer communication**: Supporting customers at all stages allows for improving service and customer trust.
-- **Ensure transparency and control**: Impossibility of falsification and fraud from the side of company employees, thanks to control over the application at all stages by different specialists.
-- **Enhance data security**: Integration with external systems allows for increasing data security and protecting confidential information.
-- **Optimize personnel management**: The ability to control personnel and instant communication with them allows for increasing the efficiency of the department.
+- **Faster Application Processing**: Automation helps specialists process applications and make decisions faster.
+- **Accurate Creditworthiness Assessment**: Enhances security by preventing fraudulent activities, leading to fewer financial losses.
+- **Improved Client Interaction**: Continuous support through all stages of the process improves client satisfaction and trust.
+- **Transparency and Control**: Multi-level oversight prevents employee fraud and ensures accurate tracking of applications.
+- **Data Security**: Integration with external systems ensures that confidential information is protected.
+- **Optimized Personnel Management**: Efficient staff monitoring and instant communication enhance departmental performance.
