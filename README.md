@@ -31,9 +31,9 @@ The "Bank Credit Department System" is a software solution designed to streamlin
 - Clients
 - Credit specialists
 - Client Managers
-- System administrators
+- System Administrators
 - Lawyers
-- Security specialists
+- Security Specialists
 - Analytics Department
 
 ## Use Cases
