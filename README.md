@@ -50,9 +50,9 @@ The "Bank Credit Department System" is a software solution designed to streamlin
 
 The UML diagrams in this repository include:
 
-- Use case diagram
-- Class diagram (coming soon...)
-- Sequence diagram (coming soon...)
+- Use case diagram ✅
+- Class diagram ✅
+- Sequence diagram ✅ 
 - Activity diagram (coming soon...)
 - State diagram (coming soon...)
 
