@@ -28,15 +28,13 @@ The "Bank Credit Department System" is a software solution designed to streamlin
 
 ## Actors
 
-- Customers
+- Clients
 - Credit specialists
-- Customer relationship managers
-- Analysts
-- System administrators
-- Department managers
+- Client Managers
+- System Administrators
 - Lawyers
-- Financial analysts
-- Security specialists
+- Security Specialists
+- Analytics Department
 
 ## Use Cases
 
@@ -53,10 +51,10 @@ The "Bank Credit Department System" is a software solution designed to streamlin
 The UML diagrams in this repository include:
 
 - Use case diagram
-- Class diagram
-- Sequence diagram
-- Activity diagram
-- State diagram
+- Class diagram (coming soon...)
+- Sequence diagram (coming soon...)
+- Activity diagram (coming soon...)
+- State diagram (coming soon...)
 
 ## Getting Started
 
@@ -73,4 +71,4 @@ Contributions to this project are welcome. If you find any issues or have sugges
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 license](LICENSE).

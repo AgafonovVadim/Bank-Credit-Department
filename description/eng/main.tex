@@ -27,109 +27,93 @@ Topic Selection and Requirements Formation}
 \date{}
 \maketitle
 
-\centerline{\LARGE\textbf{"Bank Credit Department System"}}
+\centerline{\LARGE\textbf{“Bank Credit Department System”}}
 
-\section{System Description}
+\section{System Capabilities Description}
 
-\textbf{"Bank Credit Department System"} is designed for optimizing the processing and analysis of credit-related processes within the bank. The main features of the system include:
+The \textbf{“Bank Credit Department System”} is designed to optimize the processing and analysis of processes related to bank lending. The main system functions include:
 
 \begin{itemize}
-    \item \textbf{Credit Application Processing}: Creation, submission, and processing of credit applications.
-    \item \textbf{Scoring and Creditworthiness Assessment}: Automated analysis of the creditworthiness of the applicant.
-    \item \textbf{Document Management}: Creation, modification, storage, and transmission of documents.
-    \item \textbf{Customer Communication}: Communication with customers through all available channels (chat, SMS, messengers, social networks, etc.).
-    \item \textbf{Reporting and Analytics}: Creation of reports for evaluating the credit portfolio and monitoring its status.
+    \item \textbf{Loan Application Processing}: Creation, submission, and processing of applications received for a loan.
+    \item \textbf{Scoring and Creditworthiness Assessment}: Automated analysis of the creditworthiness of the person who submitted the application.
+    \item \textbf{Document Management}: Providing options for creating, editing, storing, and sending documents.
+    \item \textbf{Client Communication}: The ability to contact clients through all available communication channels (chat, SMS, messengers, social networks, etc.).
+    \item \textbf{Reporting and Analytics}: Creation of reports for credit portfolio evaluation and monitoring of its status.
     \item \textbf{Integration with External Systems}: Interaction with other credit organizations, government agencies, etc.
 \end{itemize}
 
-\section{Key Actors}
+\section{Main Actors}
 
 \begin{itemize}
-    \item \textbf{Customers}: Individuals and legal entities submitting credit applications.
-    \item \textbf{Credit Specialists}: Employees responsible for processing and analyzing credit applications.
-    \item \textbf{Customer Relationship Managers}: Employees who communicate with customers, guiding them from start to finish.
-    \item \textbf{Analysts}: Specialists providing information about the productivity of the department and responsible for reporting.
-    \item \textbf{System Administrators}: Technical specialists maintaining system functionality and improving its fault tolerance.
-    \item \textbf{Department Managers}: Managers responsible for risk management and making strategic decisions.
-    \item \textbf{Lawyers}: Specialists dealing with legal aspects of all agreements and documents.
-    \item \textbf{Financial Analysts}: Employees analyzing and forecasting the economic situation and preparing reports.
-    \item \textbf{Security Specialists}: Specialists responsible for system security, data preservation, fraud prevention, and cyber attacks.
+    \item \textbf{Clients}: Individuals and legal entities submitting a loan application.
+    \item \textbf{Credit Specialists}: Employees responsible for processing and analyzing loan applications.
+    \item \textbf{Client Managers}: Employees who communicate with clients, guiding them from start to finish.
+    \item \textbf{System Administrators}: Technical specialists maintaining system operability and working on improving its fault tolerance.
+    \item \textbf{Lawyers}: Specialists responsible for the legal aspects of all agreements and documents.
+    \item \textbf{Security Specialists}: Specialists responsible for the system’s security, data protection, and prevention of fraud and cyber-attacks.
+    \item \textbf{Analytics Department}: External service of specialists engaged in financial analysis and forecasting of the economic situation, providing information about department productivity, and responsible for reporting.
 \end{itemize}
 
-\section{Actions, Access, and Capabilities for Key Actors}
+\section{Actions, Accesses, and Capabilities for Selected Roles}
 
-\subsection{Customers}
+\subsection{Clients}
 \begin{itemize}
-    \item \textbf{Actions}: Creating, modifying, and submitting applications, providing documents.
-    \item \textbf{Access}: User's personal account.
-    \item \textbf{Capabilities}: Monitoring application status, communicating with specialists through communication channels (chat or email).
+    \item \textbf{Actions}: Create, modify, and submit an application; provide documents.
+    \item \textbf{Accesses}: Personal user account.
+    \item \textbf{Capabilities}: Monitor the application status, communicate with specialists via communication channels (chat or email).
 \end{itemize}
 
 \subsection{Credit Specialists}
 \begin{itemize}
-    \item \textbf{Actions}: Processing applications, making credit decisions.
-    \item \textbf{Access}: Application management system, client documents, scoring system.
-    \item \textbf{Capabilities}: Viewing, editing applications, generating reports and providing them to management.
+    \item \textbf{Actions}: Process applications, make decisions regarding loan provision.
+    \item \textbf{Accesses}: Application management system, client documents, scoring system.
+    \item \textbf{Capabilities}: View, modify applications, compile reports, and provide them to management.
 \end{itemize}
 
-\subsection{Customer Relationship Managers}
+\subsection{Client Managers}
 \begin{itemize}
-    \item \textbf{Actions}: Communicating with customers, consulting on credit products.
-    \item \textbf{Access}: Client documents, chat, corporate email.
-    \item \textbf{Capabilities}: Creating applications, editing applications, requesting and providing documents.
-\end{itemize}
-
-\subsection{Analysts}
-\begin{itemize}
-    \item \textbf{Actions}: Data analysis, portfolio monitoring, report preparation.
-    \item \textbf{Access}: General data on the work of the credit department, analysis tools.
-    \item \textbf{Capabilities}: Creating, editing, and providing reports.
+    \item \textbf{Actions}: Communicate with clients, provide consultations on loan products.
+    \item \textbf{Accesses}: Client documents, chat, corporate email.
+    \item \textbf{Capabilities}: Create and edit applications, request and provide documents.
 \end{itemize}
 
 \subsection{System Administrators}
 \begin{itemize}
-    \item \textbf{Actions}: System maintenance, corporate computer setup, server setup and maintenance, problem resolution, error control.
-    \item \textbf{Access}: Full access to the system and its settings.
-    \item \textbf{Capabilities}: System configuration, user access management, data security.
-\end{itemize}
-
-\subsection{Department Managers}
-\begin{itemize}
-    \item \textbf{Actions}: Monitoring employee performance, making strategic decisions.
-    \item \textbf{Access}: Reports, tasks, chat, email.
-    \item \textbf{Capabilities}: Viewing reports, managing personnel through communication channels (chat, email).
+    \item \textbf{Actions}: System maintenance, setup of corporate computers, setup and maintenance of servers, troubleshooting, error monitoring.
+    \item \textbf{Accesses}: Full access to the system and its settings.
+    \item \textbf{Capabilities}: System configuration, user rights management, data security provision.
 \end{itemize}
 
 \subsection{Lawyers}
 \begin{itemize}
-    \item \textbf{Actions}: Creating, checking, and preparing legal documents, consulting on legal issues.
-    \item \textbf{Access}: Document database.
-    \item \textbf{Capabilities}: Viewing, creating, and editing documents.
-\end{itemize}
-
-\subsection{Financial Analysts}
-\begin{itemize}
-    \item \textbf{Actions}: Analyzing and forecasting the economic situation, preparing reports.
-    \item \textbf{Access}: Access to data related to the financial component of the department.
-    \item \textbf{Capabilities}: Creating, editing, and providing reports.
+    \item \textbf{Actions}: Creation, verification, and preparation of legal documents, legal consultations.
+    \item \textbf{Accesses}: Document database.
+    \item \textbf{Capabilities}: View, create, and edit documents.
 \end{itemize}
 
 \subsection{Security Specialists}
 \begin{itemize}
-    \item \textbf{Actions}: Ensuring protection against all types of attacks, fraud, system monitoring.
-    \item \textbf{Access}: Full access to the security system and data.
-    \item \textbf{Capabilities}: Preventing attacks, changing user access rights, data control.
+    \item \textbf{Actions}: Ensure protection against all types of attacks, fraud, and monitor the system.
+    \item \textbf{Accesses}: Full access to the security system and data.
+    \item \textbf{Capabilities}: Prevent attacks, change user access rights, control data.
+\end{itemize}
+
+\subsection{Analytics Department}
+\begin{itemize}
+    \item \textbf{Actions}: Analyze and forecast the economic situation, data analysis, portfolio monitoring, employee performance monitoring, strategic decision-making.
+    \item \textbf{Accesses}: Access to data related to the financial aspects of the department, general credit department data, analysis tools.
+    \item \textbf{Capabilities}: Create, edit, and provide reports.
 \end{itemize}
 
 \section{Application Value Description}
 
 \begin{itemize}
-    \item \textbf{Accelerate application processing}: Automation of the system helps specialists analyze the application faster and make a decision.
-    \item \textbf{Improve creditworthiness assessment accuracy}: Increasing the security of the bank's credit department from dishonest individuals, whose actions lead to financial losses.
-    \item \textbf{Enhance customer communication}: Supporting customers at all stages allows for improving service and customer trust.
-    \item \textbf{Ensure transparency and control}: Impossibility of falsification and fraud from the side of company employees, thanks to control over the application at all stages by different specialists.
-    \item \textbf{Enhance data security}: Integration with external systems allows for increasing data security and protecting confidential information.
-    \item \textbf{Optimize personnel management}: The ability to control personnel and instant communication with them allows for increasing the efficiency of the department.
+    \item \textbf{Speed Up Application Processing}: The automation of the system helps specialists analyze applications faster and make decisions.
+    \item \textbf{Increase the Accuracy of Creditworthiness Assessments}: Enhances the bank's credit department security from fraudulent individuals, whose actions lead to financial losses.
+    \item \textbf{Improve Client Interaction}: Supporting clients at all stages improves service quality and client trust.
+    \item \textbf{Ensure Transparency and Control}: Eliminates the possibility of falsification and fraud by company employees through multi-specialist oversight at each application stage.
+    \item \textbf{Enhance Data Security}: Integration with external systems enhances data security and protects confidential information.
+    \item \textbf{Optimize Personnel Management}: The ability to monitor staff and maintain instant communication increases department efficiency.
 \end{itemize}
 
 \bibliographystyle{alpha}
