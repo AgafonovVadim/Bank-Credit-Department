@@ -57,7 +57,7 @@ The UML diagrams in this repository include:
 - State diagram ✅
 
 
-* Additionally, CRC cards are implemented
+P.s. Additionally, CRC cards are implemented
 
 ## Getting Started
 
