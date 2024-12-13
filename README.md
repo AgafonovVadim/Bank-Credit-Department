@@ -51,17 +51,20 @@ The "Bank Credit Department System" is a software solution designed to streamlin
 The UML diagrams in this repository include:
 
 - Use case diagram ✅
-- Class diagram ✅
-- Sequence diagram ✅ 
-- Activity diagram (coming soon...)
-- State diagram (coming soon...)
+- Class diagram    ✅
+- Sequence diagram ✅
+- Activity diagram ✅
+- State diagram ✅
+
+
+P.s. Additionally, CRC-cards are implemented
 
 ## Getting Started
 
 To get started with this project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/yourusername/bank-credit-department-system.git`
-2. Install the necessary tools for viewing and editing UML diagrams (e.g., ArgoUML, StarUML, or online UML editors).
+2. Install the necessary tools for viewing and editing UML diagrams (e.g., Visual Paradig or online UML editors).
 3. Open the UML diagrams in your preferred tool.
 4. Review the documentation to understand the system's architecture, components, and their interactions.
 
