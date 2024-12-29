@@ -55,6 +55,7 @@ The UML diagrams in this repository include:
 - Sequence diagram ✅
 - Activity diagram ✅
 - State diagram ✅
+- Deployment diagram ✅
 
 
 P.s. CRC-cards are implemented
