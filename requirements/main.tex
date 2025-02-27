@@ -1,0 +1,256 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm, left=3cm, right=2cm}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[hidelinks]{hyperref}
+\selectlanguage{russian}
+
+
+\title{Requirement managment}
+\author{Agafonov Vadim}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{1. Questions for Conducting User Interviews}
+
+\subsection*{General Questions:}
+\begin{itemize}
+    \item What are the main issues with the current credit processing system that you want to address?
+    \item Which communication channels with clients are prioritized (chat, SMS, email, social media)?
+    \item How is integration with external systems (government agencies, other banks) handled?
+    \item Which regulatory requirements (GDPR, AML, Federal Law 152-FZ) must be considered?
+    \item What success metrics for the system do you consider key (e.g., application processing speed, fraud reduction)?
+\end{itemize}
+
+\subsection*{For Clients:}
+\begin{itemize}
+    \item What actions should clients perform in their personal account?
+    \item Is support for a mobile version or application required?
+    \item How do clients prefer to receive notifications (SMS, email, push)?
+\end{itemize}
+
+\subsection*{For Employees:}
+\begin{itemize}
+    \item What tools for assessing creditworthiness are currently in use?
+    \item How should the notification system for managers operate?
+    \item Are role-based access models needed within teams?
+\end{itemize}
+
+\subsection*{Technical Aspects:}
+\begin{itemize}
+    \item What are the system response time requirements (e.g., application loading ≤2 sec)?
+    \item What level of system availability is required (e.g., 99.9\% uptime)?
+\end{itemize}
+
+\section*{2. Functional and Non-Functional Requirements}
+
+\subsection*{Functional Requirements (FR):}
+\subsubsection*{Module 1: Application Processing}
+\begin{itemize}
+    \item \textbf{FR1.1}: The client can fill out an online application by providing personal information, the purpose of the credit, and sources of income.
+    \item \textbf{FR1.2}: Integration with NBKI for credit history verification via API.
+    \item \textbf{FR1.3}: Automatic verification of data completeness (validation of email, TIN, passport).
+\end{itemize}
+
+\subsubsection*{Module 2: Scoring}
+\begin{itemize}
+    \item \textbf{FR2.1}: Calculation of credit scoring based on credit history, income, and demographic data.
+    \item \textbf{FR2.2}: Generation of recommendations for the specialist (“Approve”, “Reject”, “Manual Review”).
+\end{itemize}
+
+\subsubsection*{Module 3: Document Management}
+\begin{itemize}
+    \item \textbf{FR3.1}: Uploading documents in PDF, JPEG, PNG formats (max. 10 MB).
+    \item \textbf{FR3.2}: Verification of document authenticity via OCR and comparison with registries (FNS).
+\end{itemize}
+
+\subsubsection*{Module 4: Communication}
+\begin{itemize}
+    \item \textbf{FR4.1}: Chat support via Telegram and WhatsApp API.
+    \item \textbf{FR4.2}: Automatic notifications regarding the application status (SMS, email, push).
+\end{itemize}
+
+\subsection*{Non-Functional Requirements (NFR):}
+\begin{itemize}
+    \item \textbf{Performance}:
+    \begin{itemize}
+        \item Application processing in ≤3 minutes under 5000 concurrent sessions.
+        \item User account loading in ≤1.5 sec.
+    \end{itemize}
+    \item \textbf{Security}:
+    \begin{itemize}
+        \item Data encryption using TLS 1.3.
+        \item Two-factor authentication for employees.
+    \end{itemize}
+    \item \textbf{Scalability}:
+    \begin{itemize}
+        \item Support for horizontal scaling (Kubernetes).
+    \end{itemize}
+    \item \textbf{Reliability}:
+    \begin{itemize}
+        \item Backups every 6 hours.
+        \item System recovery in ≤15 minutes after a failure.
+    \end{itemize}
+    \item \textbf{Compatibility}:
+    \begin{itemize}
+        \item \textbf{Mobile OS}:
+            \begin{itemize}
+                \item Android: version 10 and above (with support for WebView 85+).
+                \item iOS: version 14 and above.
+            \end{itemize}
+        \item \textbf{Browsers}:
+            \begin{itemize}
+                \item Google Chrome: version 90+.
+                \item Mozilla Firefox: version 88+.
+                \item Safari: version 14+.
+                \item Microsoft Edge: version 91+.
+            \end{itemize}
+        \item \textbf{Screen Resolutions}:
+            \begin{itemize}
+                \item Support for responsive design for resolutions from 320px (mobile devices) up to 3840px (4K monitors).
+            \end{itemize}
+        \item \textbf{API}:
+            \begin{itemize}
+                \item Compatibility with RESTful API (version 2.0).
+                \item Support for data formats: JSON, XML.
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\section*{3. User Stories and Use Cases}
+
+\subsection*{User Stories:}
+\begin{itemize}
+    \item \textbf{As a client}, I want to sign documents using an electronic signature so that I do not have to visit the bank in person.
+    \item \textbf{As an administrator}, I want to configure access rights for new employees to minimize the risk of data breaches.
+    \item \textbf{As an analyst}, I want to export data to Excel to build forecasts for the credit portfolio.
+    \item \textbf{As a legal advisor}, I want to automatically generate contracts based on approved applications to save time.
+    \item \textbf{As an IT specialist}, I want to monitor server load in real time to prevent system failures.
+    \item \textbf{As a client}, I want to withdraw an application before it is processed so that I can change the credit terms.
+\end{itemize}
+
+\subsection*{Use Case: Updating the Scoring Model}
+\begin{itemize}
+    \item \textbf{Actors}: Analytics Department, System.
+    \item \textbf{Steps}:
+    \begin{enumerate}
+        \item Analysts upload a new version of the ML model.
+        \item The system performs A/B testing on 10\% of the applications.
+        \item If the test is successful (accuracy >90\%), the model is deployed for all applications.
+        \item The old model is retained as a backup for 30 days.
+    \end{enumerate}
+\end{itemize}
+
+\subsection*{Use Case: Processing a GDPR Request}
+\begin{itemize}
+    \item \textbf{Actors}: Client, System, Administrator.
+    \item \textbf{Steps}:
+    \begin{enumerate}
+        \item The client submits a data deletion request through their personal account.
+        \item The system verifies that there are no active credits.
+        \item Data is anonymized within 72 hours.
+        \item The administrator confirms the completion of the request.
+    \end{enumerate}
+\end{itemize}
+
+\subsection*{Use Case: Integration with GIS GMP}
+\begin{itemize}
+    \item \textbf{Actors}: System, GIS GMP (state system).
+    \item \textbf{Steps}:
+    \begin{enumerate}
+        \item Upon credit approval, the system generates an electronic receipt.
+        \item The data is automatically sent to GIS GMP via API.
+        \item The system checks the payment processing status every 15 minutes.
+        \item In case of an integration error, a manual verification process is initiated.
+    \end{enumerate}
+\end{itemize}
+
+\section*{4. Error Handling Scenarios}
+
+\subsection*{Scenario 1: NBKI Integration Error}
+\begin{itemize}
+    \item \textbf{Condition}: API is unavailable for more than 30 seconds.
+    \item \textbf{Actions}:
+    \begin{enumerate}
+        \item Save the application with the status “Pending”.
+        \item Notify technical support.
+        \item Retry the request after 5 minutes (up to 3 attempts).
+        \item If all attempts are exhausted, notify the client: “The verification is taking longer than expected.”
+    \end{enumerate}
+\end{itemize}
+
+\subsection*{Scenario 2: Invalid Document}
+\begin{itemize}
+    \item \textbf{Condition}: An unreadable file has been uploaded.
+    \item \textbf{Actions}:
+    \begin{enumerate}
+        \item Reject the document.
+        \item Send a message to the client requesting to re-upload the file.
+    \end{enumerate}
+\end{itemize}
+
+\section*{5. Regulatory Requirements}
+
+\begin{itemize}
+    \item \textbf{GDPR}:
+    \begin{itemize}
+        \item Explicit client consent for data processing.
+        \item Data deletion upon request within 72 hours.
+    \end{itemize}
+    \item \textbf{AML/KYC}:
+    \begin{itemize}
+        \item Client verification against sanctions lists (OFAC, EU).
+        \item Audit log of employee actions.
+    \end{itemize}
+    \item \textbf{Federal Law 152-FZ (RF)}:
+    \begin{itemize}
+        \item Data storage on servers located within the Russian Federation.
+        \item Encryption when transmitting data outside the bank.
+    \end{itemize}
+    \item \textbf{PCI DSS}:
+    \begin{itemize}
+        \item Prohibition on storing CVV/CVC codes.
+        \item Annual security audit.
+    \end{itemize}
+\end{itemize}
+
+\section*{6. Analysis of Requirements Completeness}
+
+\subsection*{Strengths:}
+\begin{itemize}
+    \item Key roles (clients, employees, administrators) have been considered.
+    \item Detailed modules (scoring, documents, communication).
+    \item Regulatory requirements (GDPR, Federal Law 152-FZ) are covered.
+\end{itemize}
+
+\subsection*{Weaknesses:}
+\begin{itemize}
+    \item No requirements for auditing changes to applications.
+    \item Data recovery scenarios in case of hardware failures are not described.
+\end{itemize}
+
+\subsection*{Recommendations:}
+\begin{itemize}
+    \item Add an audit log to track employee actions.
+    \item Clarify integration with messaging apps (e.g., via WhatsApp Business API).
+    \item Include an SLA for external APIs (maximum response time — 2 sec).
+\end{itemize}
+
+\section*{Final Document}
+
+\subsection*{Application Value:}
+\begin{itemize}
+    \item Accelerating application processing by 40\% through automation.
+    \item Reducing fraud risks via integration with AML services.
+    \item Ensuring compliance with GDPR and Federal Law 152-FZ for operations in the Russian Federation and the EU.
+\end{itemize}
+
+\end{document}
